@@ -6,7 +6,7 @@
 }
 
 .caixa-principal {
-    height: 100vh;
+    height: 70vh;
     width: 100%;
     background-image: url(./img/background.png);
     background-size: cover;
@@ -20,11 +20,11 @@ nav {
     justify-content: space-between;
     padding-left: 30px;
     padding-right: 30px;
-    padding-top: 25px;
+    padding-top: 10px;
 }
 
 .portfolio {
-    color: #ffffff;
+    color: white;
     font-size: 40px;
     font-weight: 500;
 }
@@ -34,10 +34,10 @@ nav {
 }
 
 li {
-    color: white;
+    background: linear-gradient(#191919, #f9004d);
     list-style: none;
     display: inline-block;
-    font-size: 25px;
+    font-size: 30px;
     margin-right: 30px;
     cursor: pointer;
 }
@@ -75,19 +75,18 @@ h1 span {
 section {
     display: flex;
     align-items: center;
-    padding: 60px 15%;
     background-color: #000000;
 }
 
 section img {
     height: 400px;
     border-radius: 100%;
-    border: 2px solid #f9004d;
+    border: 2px solid ;
     margin-right: 30px;
 }
 
 section div h2 {
-    color: white;
+    color:#f9004d;
     font-size: 75px;
 }
 
@@ -100,7 +99,7 @@ section div p {
 
 section div button {
     color: white;
-    background: #f9004d;
+    background: linear-gradient( rgb(198, 52, 52), rgb(10, 10, 130)) ;
     height: 50px;
     width: 180px;
     font-size: 18px;
@@ -110,8 +109,8 @@ section div button {
 }
 
 section div button:hover {
-    background-color: black;
-    border: 3px solid #f9004d;
+    background:linear-gradient(90deg, rgb(10, 10, 130), rgb(198, 52, 52));
+    border: 3px solid ;
     transition: 0.5s;
 }
 
@@ -122,8 +121,8 @@ section div button:hover {
 }
 
 .projetos h2 {
-    color: white;
-    font-size: 75px;
+    background:linear-gradient(#071f62, #101e9d);
+    font-size: 85px;
     text-align: center;
 }
 
@@ -147,8 +146,8 @@ section div button:hover {
 
 .card p {
     color: #e2b9c6;
-    margin-top: 20px;
-    margin-bottom: 40px;
+    margin-top: 25px;
+    margin-bottom: 25px;
 }
 
 .card a {
