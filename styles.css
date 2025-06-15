@@ -218,3 +218,140 @@ footer p {
     transform: scale(1.3);
     transition: 0.5s;
 }
+
+/* --- Media Queries para Dispositivos Móveis (Celulares e Tablets Pequenos) --- */
+
+/* Geral para telas até 768px de largura (inclui a maioria dos tablets em modo retrato e celulares grandes) */
+@media (max-width: 768px) {
+    /* Ajustes globais e tamanhos de fonte */
+    body {
+        font-size: 14px; /* Diminui um pouco o tamanho da fonte base */
+    }
+
+    /* Navegação (nav) */
+    nav {
+        flex-direction: column; /* Empilha os itens do menu (logo em cima, links embaixo) */
+        padding: 15px 20px; /* Aumenta um pouco o padding para toque */
+    }
+
+    .portfolio {
+        font-size: 30px; /* Diminui o tamanho do título do portfólio */
+        margin-bottom: 15px; /* Adiciona espaço abaixo do título */
+    }
+
+    li {
+        display: block; /* Cada item da lista ocupa sua própria linha */
+        font-size: 20px; /* Diminui o tamanho da fonte dos links */
+        margin: 10px 0; /* Espaçamento entre os itens do menu */
+        text-align: center; /* Centraliza os links */
+    }
+
+    /* Seção "meu-nome" (Hero Section) */
+    .meu-nome {
+        position: static; /* Remove o posicionamento absoluto para fluir com o documento */
+        text-align: center; /* Centraliza o texto */
+        padding-top: 50px; /* Adiciona um padding no topo para espaçamento */
+        transform: none; /* Remove qualquer transformação que possa existir do absoluto */
+        left: unset; /* Remove a propriedade left */
+        top: unset; /* Remove a propriedade top */
+    }
+
+    h1 {
+        font-size: 45px; /* Diminui o tamanho do seu nome */
+    }
+
+    .meu-nome h3 {
+        font-size: 50px; /* Diminui o subtítulo */
+    }
+
+    /* Seção com a Imagem e o Texto (Sobre Mim) */
+    section {
+        flex-direction: column; /* Empilha a imagem e o texto */
+        text-align: center; /* Centraliza o texto */
+        padding: 40px 20px; /* Adiciona padding geral na seção */
+    }
+
+    section img {
+        height: 250px; /* Diminui o tamanho da imagem */
+        width: 250px; /* Garante que a imagem seja quadrada e menor */
+        margin-right: 0; /* Remove margem lateral */
+        margin-bottom: 30px; /* Adiciona margem abaixo da imagem */
+    }
+
+    section div h2 {
+        font-size: 45px; /* Diminui o título da seção */
+    }
+
+    section div p {
+        font-size: 18px; /* Diminui o parágrafo */
+        margin-bottom: 30px; /* Ajusta a margem */
+    }
+
+    /* Seção de Projetos */
+    .projetos h2 {
+        font-size: 50px; /* Diminui o título da seção de projetos */
+    }
+
+    .card-projetos {
+        flex-direction: column; /* Empilha os cards de projeto */
+        align-items: center; /* Centraliza os cards */
+        margin-top: 50px; /* Ajusta a margem superior */
+    }
+
+    .card {
+        width: 90%; /* Faz com que o card ocupe quase toda a largura da tela */
+        max-width: 335px; /* Limita a largura máxima do card */
+        margin-bottom: 30px; /* Adiciona espaçamento entre os cards empilhados */
+        height: auto; /* Permite que a altura do card se ajuste ao conteúdo */
+        padding: 20px; /* Ajusta o padding interno */
+    }
+
+    /* Rodapé (Footer) */
+    footer {
+        padding-top: 50px; /* Diminui o padding do rodapé */
+        padding-bottom: 60px;
+    }
+
+    footer h5 {
+        font-size: 24px; /* Diminui o título do rodapé */
+    }
+
+    footer p {
+        font-size: 16px; /* Diminui o parágrafo do rodapé */
+        margin-bottom: 20px;
+    }
+
+    .social {
+        flex-wrap: wrap; /* Permite que os ícones quebrem linha se necessário */
+        justify-content: center; /* Centraliza os ícones */
+        gap: 15px; /* Diminui o espaçamento entre os ícones */
+    }
+}
+
+/* --- Media Query para Celulares Muito Pequenos (Ex: até 480px de largura) --- */
+@media (max-width: 480px) {
+    /* Ajustes mais finos para telas menores ainda */
+    h1 {
+        font-size: 35px; /* Reduz ainda mais o tamanho do seu nome */
+    }
+
+    .meu-nome h3 {
+        font-size: 18px;
+    }
+
+    section div h2 {
+        font-size: 35px; /* Reduz ainda mais o título da seção sobre */
+    }
+
+    section div p {
+        font-size: 16px;
+    }
+
+    .projetos h2 {
+        font-size: 40px; /* Reduz o título da seção de projetos */
+    }
+
+    .card {
+        padding: 15px; /* Reduz o padding dos cards */
+    }
+}
